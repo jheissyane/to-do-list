@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  outline: none;
+}
+
+.container {
+  background-color: #ffffff79;
+  width: 500px;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 100px auto 0;
+}
+
+body {
+  background: url("../img/background.jpg");
+}
+
+.input-tarefa {
+  border: none;
+  border-radius: 5px;
+  width: 320px;
+  height: 30px;
+  padding-left: 10px;
+}
+
+.button-add {
+  border: none;
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+  background-color: #c73998;
+  color: #fff;
+  padding: 0 10px;
+  float: right;
+  font-weight: 700;
+}
+
+.button-add:hover {
+  background-color: #c7399886;
+}
+
+.button-add:active {
+  background-color: #c7399848;
+}
+
+.lista-tarefas {
+  width: 100%;
+  list-style: none;
+  margin-top: 20px;
+}
+
+.tarefa {
+  background-color: #f2f2f2;
+  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+img {
+  height: 25px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.tarefa:hover img {
+  opacity: 1;
+}
+
+.done {
+  text-decoration: line-through;
+  color: #95a5a6;
+}
